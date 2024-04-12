@@ -1,0 +1,25 @@
+Dependency review
+
+https://docs.github.com/en/code-security/supply-chain-security/understanding-your-software-supply-chain/about-dependency-review
+
+Can add from github web page:
+1. Security
+2. Setup code scanning
+3. Configure scanning tool
+4. search "dependency"
+5. Configure 
+
+
+Need the dependency check to be required. Can't access the settings to require it, seems to be locked down on byu-oit
+https://josh-ops.com/posts/dependency-review-action/:
+Making this a required status check
+How To
+To make this a required status check on the pull request, follow these instructions:
+
+The first thing you need is a public repository (GHAS is free for public repos) or a private repository with the GitHub Advanced Security license enabled
+Under the Settings tab in the repository, navigate to Branches
+Create a branch protection rule for your default branch - check the ‘Require status checks to pass before merging’ box
+Add the dependency review job as a status check - in the example above, it’s dependency-review
+If you don’t see the dependency-review to add as a status check to the branch protection, it won’t appear as an option until you initiate at least one PR on the repository that triggers this job.
+
+In package.json, tar 2.2.2 will trigger a dependency error.
