@@ -1,0 +1,7 @@
+{
+  "name": "gh-actions",
+  "version": "0.0.1",
+  "dependencies": {
+    "tar": "7.0.0"
+  }
+}
