@@ -19,7 +19,7 @@ jobs:
         with:
           # Use one config file for all repos
           # config-file: 'github/richardskg/BYU-dependency-review/dependency-review-config.yml@main'
-          config-file: 'richardskg/BYU-dependency-review/dependency-review-config.yml@main'
+          config-file: 'byu-oit/BYU-dependency-review/dependency-review-config.yml@main'
           # config-file: './.github/dependency-review-config.yml'
           # # Use a token
           # external-repo-token: ${{ secrets.ACTION_TOKEN }}
