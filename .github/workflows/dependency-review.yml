@@ -16,3 +16,4 @@ jobs:
         uses: actions/dependency-review-action@v4
         with:
           config-file: 'github/byu-oit/BYU-dependency-review/dependency-review-config.yml@main'
+          external-repo-token: ${{ secrets.DEPLOY_REVIEW }}
