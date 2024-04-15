@@ -16,7 +16,7 @@ jobs:
         uses: actions/checkout@v4
       - name: 'Dependency Review'
         uses: actions/dependency-review-action@v4
-        # with:
+        with:
           # Use one config file for all repos
-          # config-file: 'github/richardskg/BYU-dependency-review/dependency-review-config.yml@main'
-          # external-repo-token: ${{ secrets.GITHUB_TOKEN }}
+          config-file: 'github/richardskg/BYU-dependency-review/dependency-review-config.yml@main'
+          external-repo-token: ${{ secrets.GITHUB_TOKEN }}
