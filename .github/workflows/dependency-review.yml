@@ -18,7 +18,7 @@ jobs:
         uses: actions/dependency-review-action@v4
         with:
           # Use one config file for all repos
-          # config-file: 'github/richardskg/BYU-dependency-review/dependency-review-config.yml@main'
           config-file: 'byu-oit/BYU-dependency-review/dependency-review-config.yml@main'
+          # for testing:
           # config-file: './.github/dependency-review-config.yml'
           external-repo-token: ${{ secrets.ACTION_TOKEN }}
