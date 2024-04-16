@@ -7,7 +7,6 @@ permissions:
   # Write permissions for pull-requests are required for using the `comment-summary-in-pr` option, comment out if you aren't using this option
   pull-requests: write
 
-
 jobs:
   dependency-review:
     runs-on: ubuntu-latest
@@ -18,5 +17,7 @@ jobs:
         uses: actions/dependency-review-action@v4
         with:
           # Use one config file for all repos
-          config-file: 'github/richardskg/BYU-dependency-review/dependency-review-config.yml@main'
-          # external-repo-token: ${{ secrets.GITHUB_TOKEN }}
+          config-file: 'byu-oit/BYU-dependency-review/dependency-review-config.yml@main'
+          # for testing:
+          # config-file: './.github/dependency-review-config.yml'
+          external-repo-token: ${{ secrets.ACTION_TOKEN }}

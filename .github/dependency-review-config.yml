@@ -1,0 +1,105 @@
+# site wide config for dependency-review-action
+allow_licenses:
+  - 'GPL-3.0'
+  - 'BSD-3-Clause'
+  - 'MIT'
+
+
+#------------------------
+# Defines the threshold for the level of severity. 
+# The action will fail on any pull requests that introduce vulnerabilities of the specified severity level or higher.
+# low, moderate, high, critical
+# default low
+# fail-on-severity: 'low'
+
+#------------------------
+# Contains a list of allowed licenses.
+# The action will fail on pull requests that introduce dependencies with licenses that do not match the list.
+# Any SPDX-compliant identifier(s)
+# Default: none
+# not supported for use with GitHub Enterprise Server
+
+#------------------------
+# allow_licenses:
+#   - 'GPL-3.0'
+#   - 'BSD-3-Clause'
+#   - 'MIT'
+
+#------------------------
+# Contains a list of prohibited licenses. The action will fail on pull requests that introduce dependencies with licenses that match the list.
+# not supported for use with GitHub Enterprise Server
+# deny-licenses:
+# Any SPDX-compliant identifier(s) 
+# Default: none
+
+# Contains a list of strings of the build environments you want to support. The action will fail on pull requests that introduce vulnerabilities in the scopes that match the list.
+# fail-on-scopes:
+# runtime, development, unknown
+# Default: runtime
+
+# Contains a list of GitHub Advisory Database IDs that can be skipped during detection.
+# allow-ghsas:
+# Any GHSAs from the GitHub Advisory Database
+# Default: none
+
+# Enable or disable the license check performed by the action.
+# license-check:
+# true, false
+# Default: true
+
+# Enable or disable the vulnerability check performed by the action.
+# vulnerability-check:
+# true, false
+# Default: true
+
+# Contains a list of packages that will be excluded from license checks.
+# not supported for use with GitHub Enterprise Server
+# allow-dependencies-licenses:
+# Any package(s) in purl format
+# Default: none
+
+# Provide custom git references for the git base/head when performing the comparison check. This is only used for event types other than pull_request and pull_request_target.
+# base-ref/head-ref
+# Any valid git ref(s) in your project
+# Default: none
+
+# Enable or disable reporting the review summary as a comment in the pull request. If enabled, you must give the workflow or job the pull-requests: write permission. 
+# comment-summary-in-pr:
+# always, on-failure, never
+# never
+
+# Any number of packages to block in a PR.
+# deny-packages:
+# Package(s) in purl format
+# Default: empty
+
+# Any number of groups (namespaces) to block in a PR.
+# deny-groups:
+# Namespace(s) in purl format (no package name, no version number)
+# empty
+
+# Enable or disable retrying the action every 10 seconds while waiting for dependency submission actions to complete.
+# not supported for use with GitHub Enterprise Server
+# retry-on-snapshot-warnings:
+# true, false
+# Default: false
+
+# Maximum amount of time (in seconds) to retry the action while waiting for dependency submission actions to complete.
+# retry-on-snapshot-warnings-timeout:
+# Any positive integer
+# Default: 120
+
+# When set to true, the action will log all vulnerabilities as warnings regardless of the severity, and the action will complete with a success status. This overrides the fail-on-severity option.
+# warn-only:
+# true, false
+# Default: false
+
+# When set to true, the action will output information about all the known OpenSSF Scorecard scores for the dependencies changed in this pull request.
+# show-openssf-scorecard:
+# true, false
+# Default: true
+
+# When show-openssf-scorecard is set to true, this option lets you configure the threshold for when a score is considered too low and gets a ⚠️ warning in the CI.
+# warn-on-openssf-scorecard-level:
+# Any positive integer
+# Default: 3
