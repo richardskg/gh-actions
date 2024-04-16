@@ -36,3 +36,5 @@ Each individual check returns a score of 0 to 10, with 10 representing the best 
 “High” risk checks are weighted at 7.5
 “Medium” risk checks are weighted at 5
 “Low” risk checks are weighted at 2.5
+
+One oddity is that the scorecard checks changes from the branches. If dependencies are deleted, they show up in the check.
