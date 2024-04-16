@@ -6,35 +6,6 @@
     "url": "git+https://github.com/byu-oit/aim.git"
   },
   "dependencies": {
-    "tar": "7.0.0",
-    "@byu-oit/nuxt-alerts": "^1.0.5",
-    "@byu-oit/nuxt-axios-backoff": "^1.0.1",
-    "@byu-oit/nuxt-byu-auth": "^3.1.2",
-    "@byu-oit/nuxt-sis-access-management": "^3.1.1",
-    "@byu-oit/nuxt-sis-context": "^3.0.2",
-    "@byuweb/browser-oauth": "^1.0.3",
-    "@fortawesome/fontawesome-free": "^5.15.4",
-    "@nuxtjs/axios": "^5.13.6",
-    "@nuxtjs/markdownit": "^1.2.10",
-    "accounting": "^0.4.1",
-    "chart.js": "^3.5.1",
-    "dts-gen": "^0.6.0",
-    "lodash.get": "^4.4.2",
-    "lodash.merge": "^4.6.2",
-    "lodash.pick": "^4.4.0",
-    "node-xlsx": "^0.23.0",
-    "nuxt": "^2.15.6",
-    "nuxt-property-decorator": "^2.8.8",
-    "papaparse": "^5.3.0",
-    "param-case": "^3.0.3",
-    "postcss": "^8.4.30",
-    "v-calendar": "^2.4.1",
-    "vue-observe-visibility": "^1.0.0",
-    "vue-pdf": "^4.3.0",
-    "vue-resize": "^1.0.1",
-    "vue-server-renderer": "^2.7.14",
-    "vue-template-compiler": "^2.7.14",
-    "vue2-editor": "^2.10.3",
-    "vuedraggable": "^2.24.1"
+    "tar": "7.0.0"
   }
 }
