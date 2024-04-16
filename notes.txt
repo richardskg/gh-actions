@@ -32,5 +32,13 @@ fail-on-severity  -- If there are too many "fake" failures
 comment-summary-in-pr  -- probably useful for failures
 deny-packages
 deny-groups
-show-openssf-scorecard  -- needs some investigation. Scores go from 2.5 (low) to 10 (critical)
+show-openssf-scorecard
 warn-on-openssf-scorecard-level
+
+Scorecard info:
+Each individual check returns a score of 0 to 10, with 10 representing the best possible score. Scorecard also produces an aggregate score, which is a weight-based average of the individual checks weighted by risk.
+
+“Critical” risk checks are weighted at 10
+“High” risk checks are weighted at 7.5
+“Medium” risk checks are weighted at 5
+“Low” risk checks are weighted at 2.5
