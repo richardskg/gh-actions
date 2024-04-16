@@ -9,6 +9,9 @@ Can add from github web page:
 4. search "dependency"
 5. Configure 
 
+Configure an access token in the developer settings section of the user settings.
+It needs to be authorized for byu-oit
+
 
 Need the dependency check to be required. Can't access the settings to require it, seems to be locked down on byu-oit
 https://josh-ops.com/posts/dependency-review-action/:
@@ -23,3 +26,11 @@ Add the dependency review job as a status check - in the example above, it’s d
 If you don’t see the dependency-review to add as a status check to the branch protection, it won’t appear as an option until you initiate at least one PR on the repository that triggers this job.
 
 In package.json, tar 2.2.2 will trigger a dependency error.
+
+Interesting settings:
+fail-on-severity  -- If there are too many "fake" failures
+comment-summary-in-pr  -- probably useful for failures
+deny-packages
+deny-groups
+show-openssf-scorecard  -- needs some investigation. Scores go from 2.5 (low) to 10 (critical)
+warn-on-openssf-scorecard-level
